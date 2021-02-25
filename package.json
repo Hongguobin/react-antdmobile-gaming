@@ -13,10 +13,14 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "theme": {
+    "brand-primary": "red",
+    "color-text-base": "#333"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,5 +40,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3",
+    "css-loader": "^5.0.2",
+    "customize-cra": "^1.0.0",
+    "less": "^4.1.1",
+    "less-loader": "^5.0.0",
+    "react-app-rewired": "^2.1.8",
+    "style-loader": "^2.0.0",
+    "svg-sprite-loader": "^5.2.1"
   }
 }
