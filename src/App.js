@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button } from 'antd-mobile';
+import React from 'react'
+import Tabbar from './components/tabbar'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button type="primary">warning</Button>
-      </header>
+      <Tabbar></Tabbar>
     </div>
   );
 }
