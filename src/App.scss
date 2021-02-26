@@ -1,17 +1,22 @@
-.App {
-  /* text-align: center; */
-}
-.panel{
-  width: 100%;
-  height: 300px;
-}
-.tabbar{
+.app{
+  height: 100vh;
   display: flex;
-  align-items: center;
-  .tabItem{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  flex-direction: column;
+  &__panel{
+    flex: 1;
+    overflow: hidden;
+  }
+  &__tabbar{
+    height: 98px;
+    display: flex;
+    align-items: center;
+    .tabItem{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
   }
 }
+

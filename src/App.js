@@ -45,8 +45,8 @@ const tabbarArr = [
 function App() {
   return (
     <Router>
-      <div className="App">
-        <div className="panel">
+      <div className="app">
+        <div className="app__panel">
           {tabbarArr.map((item, index) => {
             return (
               <Route
@@ -58,7 +58,7 @@ function App() {
             )
           })}
         </div>
-        <div className="tabbar">
+        <div className="app__tabbar">
           {tabbarArr.map((item, index) => {
             return (
               <Link to={item.path} key={index} className="tabItem">

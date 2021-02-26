@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './common/style/reset.css'
 import reportWebVitals from './reportWebVitals';
 import fastclick from 'fastclick';
 fastclick.attach(document.body);
